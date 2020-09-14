@@ -1,6 +1,23 @@
 const express = require("express");
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://localhost/FullStack-Todo-App");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+
+const todoRoutes = require("./routes");
+// connect database
+mongoose.connect("mongodb://localhost/todo", {
+  useNewUrlParser: true,
+});
+
+// create server
 const app = express();
 
-app.listen(4000, () => console.log("Sunucu port 4000'de çalıştı"));
+// config middleware
+app.use(bodyParser.json());
+app.use(cors());
+
+// routes
+app.use("/api/todo", todoRoutes);
+
+// run server
+app.listen(5000, () => console.log("Server is running on port 5000"));
