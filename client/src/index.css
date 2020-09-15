@@ -9,8 +9,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: Roboto,sans-serif;
 }
 
 * {
@@ -19,14 +18,19 @@ code {
 
 .app {
   margin: 0 auto;
-  width: 600px;
-  min-height: 300px;
-  margin-top: 70px;
+  width: 50%;
+
 }
 /* Remove margins and padding from the list */
 ul {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+
 }
 
 /* Style the list items */
@@ -35,28 +39,41 @@ ul li {
   position: relative;
   padding: 12px 8px 12px 40px;
   list-style-type: none;
-  background: #eee;
+  background: #5D3EBD;
   font-size: 18px;
   transition: 0.2s;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  margin: 15px 0;
 }
 
-/* Set all odd list items to a different color (zebra-stripes) */
+
+
+
 ul li:nth-child(odd) {
-  background: #f9f9f9;
+  background: #F8D146;
+  box-shadow: 3px 5px #5739B3;
+
+}
+ul li:nth-child(even) {
+  background: #5739B3 ;
+  box-shadow: 3px 5px  #F8D146; ;
 }
 
-/* Darker background-color on hover */
+
 ul li:hover {
-  background: #ddd;
+  opacity: 0.6;
+  transition: 0.4s;
 }
 
-/* When clicked on, add a background color and strike out text */
+/* Tıklandığında line-through yap ve check koy. */
 ul li.checked {
   background: #888;
   color: #fff;
@@ -91,7 +108,7 @@ ul li.checked::before {
 }
 
 .header {
-  background-color: #f44336;
+  background-color: #5D3EBD;
   padding: 30px 40px;
   color: white;
   text-align: center;
@@ -108,9 +125,9 @@ ul li.checked::before {
 input {
   margin: 0;
   border: none;
-  border-radius: 0;
+  border-radius: 8px;
   width: 100%;
-  padding: 10px;
-  float: left;
+  padding: 15px;
   font-size: 16px;
+
 }

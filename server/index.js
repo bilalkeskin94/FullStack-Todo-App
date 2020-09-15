@@ -6,6 +6,7 @@ const cors = require("cors");
 const todoRoutes = require("./routes");
 // connect database
 mongoose.connect("mongodb://localhost/todo", {
+  useUnifiedTopology: true,
   useNewUrlParser: true,
 });
 
@@ -17,7 +18,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // routes
-app.use("/api/todo", todoRoutes);
+app.use("/api/todos", todoRoutes);
 
 // run server
-app.listen(5000, () => console.log("Server is running on port 5000"));
+app.listen(5000, () => console.log("Sunucu port 5000'de çalışıyor"));

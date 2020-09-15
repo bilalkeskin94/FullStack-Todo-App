@@ -5,3 +5,4 @@ import reducer from "./reducer";
 const store = createStore(reducer, applyMiddleware(thunk));
 
 export default store;
+//redux store

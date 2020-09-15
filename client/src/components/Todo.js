@@ -6,7 +6,6 @@ import { deleteTodo, completeTodo } from "../actions";
 class Todo extends React.Component {
   constructor(props) {
     super(props);
-
     this.handleDelete = this.handleDelete.bind(this);
     this.handleComplete = this.handleComplete.bind(this);
   }
