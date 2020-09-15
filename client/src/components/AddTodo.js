@@ -13,18 +13,11 @@ class AddTodo extends React.Component {
       e.target.value = "";
     }
   }
-  handleClick(e) {
-    if (e.key === "click") {
-      this.props.addTodo(e.target.value);
-      e.target.value = "";
-    }
-  }
 
   render() {
     return (
       <div>
         <input onKeyPress={this.handleSubmit} />
-        <button onClick={this.handleClick}>Add Todo</button>
       </div>
     );
   }
