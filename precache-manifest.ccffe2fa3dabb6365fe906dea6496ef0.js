@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd179430af7182a0388498510cdc9b2f",
+    "revision": "c0ebdfa91e295a46fe398f370e14de67",
     "url": "/FullStack-Todo-App/index.html"
   },
   {
-    "revision": "858f2ba5c9732eecd405",
-    "url": "/FullStack-Todo-App/static/css/main.59a78c0a.chunk.css"
+    "revision": "353c37495e36d920c664",
+    "url": "/FullStack-Todo-App/static/css/main.783508bb.chunk.css"
   },
   {
     "revision": "18e099d6045e1f9d2ad0",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/FullStack-Todo-App/static/js/2.7940d821.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "858f2ba5c9732eecd405",
-    "url": "/FullStack-Todo-App/static/js/main.d9d3e830.chunk.js"
+    "revision": "353c37495e36d920c664",
+    "url": "/FullStack-Todo-App/static/js/main.f281b378.chunk.js"
   },
   {
     "revision": "f489b3dc9f4d23697d13",
