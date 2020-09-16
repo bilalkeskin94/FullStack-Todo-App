@@ -5,7 +5,6 @@ class AddTodo extends React.Component {
   constructor(props) {
     super(props);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleClick = this.handleClick.bind(this);
   }
   handleSubmit(e) {
     if (e.key === "Enter") {
