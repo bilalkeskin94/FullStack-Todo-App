@@ -5,11 +5,11 @@ Live url : https://bilalkeskin94.github.io/FullStack-Todo-App/
 
 To Start The App
 
-##cd server
+cd server
 
-##npm install
+npm install
 
-npm run start --
+npm run start
 
 Open new terminal and type cd client
 
